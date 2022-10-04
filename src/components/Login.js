@@ -15,18 +15,18 @@ function Login({ setIsLoggedIn }) {
     });
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-
-    setIsLoggedIn(true);
-
-    // after logging the user in, redirect to the home page!
-    history.push("/");
-  }
+  
+    function handleSubmit(e) {
+      e.preventDefault();
+  
+      setIsLoggedIn(true);
+  
+      // after logging the user in, redirect to the home page!
+      history.push("/");
+    }
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>Login</h1>
       <input
         type="text"
         name="username"
